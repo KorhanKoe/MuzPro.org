@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuzPro.org</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>MuzPro.org</h1> 
+        <label for="toggle_button" class="toggle_button">
+            <li onclick="showSidebar()"><a href="#"><i class="fa fa-bars" aria-hidden="true" style="color:white; font-size:35px; margin-right: 20px"></i></a></li>
+        </label>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()" id="svg">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="white" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a>
+            </li>
+            <li><a href="MuzPro.org.html" id="o">Start</a></li>
+            <li><a href="Produktion.html" id="o">Produktion</a></li>
+            <li><a href="major_scale.html" id="o">Major</a></li>
+            <li><a href="minor_scale.html" id="o">Minor</a></li>
+            <li><a href="Songwriting.html" id="o">Chord Porgressions</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="noten-list">
+            <div class="noten-item" id="si">
+                <h2>Modes</h2>
+                <p class="description">Die gängigen Modi, auch bekannt als Kirchentonarten, bieten eine vielfältige Palette
+                     an klanglichen Möglichkeiten, die sowohl in der Dur- als auch in der Molltonleiter zu finden sind. 
+                     Zu den Modalitäten in der Dur-Tonleiter gehören der ionische Modus, der oft als "normaler" oder "Standard"-
+                     Modus bezeichnet wird und eine fröhliche, aufsteigende Melodie erzeugt. Der lydische Modus, mit 
+                     seiner charakteristischen erhöhten vierten Stufe, verleiht den Melodien eine helle und strahlende Atmosphäre. 
+                     Der myxolydische Modus bietet mit seiner dominanten, bluesigen Klangfarbe eine ideale Grundlage für rockige und 
+                     jazzige Stücke. Im folgenden finden kurze Definitionen der einzelnen Modi statt, um ihren Einsatz genauer definieren zu können. <br>
+                     Der exakte Aufbau der Modi ist hier zu finden: <a href="all_modes.html"><b>Modes.</b></a>
+
+                    <br>
+                    <br>
+                    <br>
+                    <b><u>Ionian</u></b>
+                    <br>Der ionische Modus, auch bekannt als die Ionische Tonleiter, ist die Grundlage der Dur-Tonleiter und wird oft als "normaler" oder "Standard"-Modus bezeichnet. Mit seinem fröhlichen und aufsteigenden Charakter bildet er das Rückgrat vieler klassischer und zeitgenössischer Melodien.<br>
+                    <br>
+
+                    <b><u>Lydian</u></b>
+                    <br>
+                    Lydian ist ein charakteristischer Modus mit einer erhöhten vierten Stufe, 
+                    die ihm einen einzigartigen und schwebenden Klang verleiht. Diese Tonleiter erzeugt 
+                    eine besondere Atmosphäre und wird häufig in der Jazzmusik und in progressiven Stücken 
+                    verwendet, um eine mysteriöse und ätherische Stimmung zu erzeugen.<br>
+                    <br>
+
+                    <b><u>Myxolydian</u></b>
+                    <br> Myxolydian ist ein Modus, der sich durch seine abgesenkte siebte Stufe auszeichnet, 
+                    was ihm einen charakteristischen Mix aus Dur- und Mollqualitäten verleiht. Diese Tonleiter 
+                    wird häufig in der Rock- und Bluesmusik verwendet und erzeugt einen markanten und leicht melancholischen 
+                    Klang.<br>
+                    <br>
+
+                    <b><u>Dorian</u></b>
+                    <br>Dorian ist ein Modus, der eine leicht melancholische Stimmung erzeugt, da er eine Molltonleiter mit einer
+                     erhöhten sechsten Stufe kombiniert. Dies verleiht ihm eine einzigartige Klangfarbe, die oft in Jazz, 
+                     Blues und Rockmusik zu hören ist. <br>
+                    <br>
+                    <b><u>Phrygian</u></b>
+                    <br>
+                    Phrygian ist bekannt für seinen exotischen und düsteren Klang, der durch die Molltonleiter mit
+                     einer verminderten zweiten Stufe entsteht. Diese Modus wird häufig in Flamenco, Metal und anderen
+                      Musikgenres verwendet,
+                     um eine intensive und mysteriöse Atmosphäre zu schaffen.<br>
+                    <br>
+                    <b><u>Aeolian</u></b>
+                    Aeolian, auch als natürliche Molltonleiter bekannt, ist eine der grundlegenden Tonleitern in der 
+                    westlichen Musik. Sie wird oft für melancholische und emotionale Melodien verwendet 
+                    und bildet die Basis vieler klassischer Stücke sowie moderner Pop- und Rocksongs.<br>
+                    <br>
+                    <b><u>Locrian</u></b>
+                    Locrian ist die siebte und ungewöhnlichste der gängigen Modi, da sie auf dem siebten Ton der Durtonleiter 
+                    basiert und eine verminderte Quinte enthält. Aufgrund ihres instabilen Klanges wird die Locrian-Skala in der 
+                    Regel seltener verwendet und ist eher in experimenteller Musik zu finden.<br>
+                    <br>
+                    Abseits der traditionellen Modi gibt es noch einige erweiterte Tonleitern, die oft in 
+                    spezifischen musikalischen Kontexten verwendet werden. Die harmonische Durtonleiter, die eine 
+                    erhöhte siebte Stufe aufweist, verleiht den Melodien einen lebhaften und zugleich verträumten 
+                    Charakter. Die harmonische Molltonleiter, mit ihrer erhöhten siebten Stufe und ihren tragenden 
+                    Mollakkorden, erzeugt eine emotionale Spannung und Tiefe. Schließlich ist der lydisch-dominante 
+                    Modus bekannt für seine markante erhöhte vierte Stufe und seine bluesigen, jazzigen Klänge, die 
+                    oft in Funk- und Fusionmusik zu hören sind.</p>
+                <a href="all_modes.html" class="more-info-link">Weitere Informationen</a>
+            </div>  
+              
+    </main>
+    <footer id="footer2">
+        <div class="footer-content">
+            <ul>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+        
+        <script src="script.js"></script>
+
+</body>
+</html>

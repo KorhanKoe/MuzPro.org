@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuzPro.org</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>MuzPro.org</h1> 
+        <label for="toggle_button" class="toggle_button">
+            <li onclick="showSidebar()"><a href="#"><i class="fa fa-bars" aria-hidden="true" style="color:white; font-size:35px; margin-right: 20px"></i></a></li>
+        </label>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()" id="svg">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="white" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a>
+            </li>
+            <li><a href="MuzPro.org.html" id="o">Start</a></li>
+            <li><a href="Produktion.html" id="o">Produktion</a></li>
+            <li><a href="major_scale.html" id="o">Major</a></li>
+            <li><a href="minor_scale.html" id="o">Minor</a></li>
+            <li><a href="modes.html" id="o">Modes</a></li>
+            <li><a href="Songwriting.html" id="o">Chord Porgressions</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <body>
+            <main>
+                <div class="notenliste">
+                    <h2 id="mj2">Major-Modes</h2>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Major Modes</th>
+                                <th>I</th>
+                                <th>II</th>
+                                <th>III</th>
+                                <th>IV</th>
+                                <th>V</th>
+                                <th>VI</th>
+                                <th>VII</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="c-min">Ionian (Major Scale)</td>
+                                <td id="c-min-1">R</td>
+                                <td id="c-min-2">2</td>
+                                <td id="c-min-3">3</td>
+                                <td id="c-min-4">4</td>
+                                <td id="c-min-5">5</td>
+                                <td id="c-min-6">6</td>
+                                <td id="c-min-7">7</td>
+                            </tr>
+                            <tr>
+                                <td id="d-min">Lydian</td>
+                                <td id="d-min-1">R</td>
+                                <td id="d-min-2">2</td>
+                                <td id="d-min-3">3</td>
+                                <td id="d-min-4">4#</td>
+                                <td id="d-min-5">5</td>
+                                <td id="d-min-6">6</td>
+                                <td id="d-min-7">7</td>
+                            </tr>
+                            <tr>
+                                <td id="e-min">Myxolydian</td>
+                                <td id="e-min-1">R</td>
+                                <td id="e-min-2">2</td>
+                                <td id="e-min-3">3</td>
+                                <td id="e-min-4">4</td>
+                                <td id="e-min-5">5</td>
+                                <td id="e-min-6">6</td>
+                                <td id="e-min-7">7b</td>
+                            </tr>
+                            <tr>
+                                <td id="f-min">Harmonic Major</td>
+                                <td id="f-min-1">R</td>
+                                <td id="f-min-2">2</td>
+                                <td id="f-min-3">3</td>
+                                <td id="f-min-4">4</td>
+                                <td id="f-min-5">5</td>
+                                <td id="f-min-6">6b</td>
+                                <td id="f-min-7">7</td>
+                            </tr>
+                            <tr>
+                                <td id="g-min">Lydian Dominant</td>
+                                <td id="g-min-1">R</td>
+                                <td id="g-min-2">2</td>
+                                <td id="g-min-3">3</td>
+                                <td id="g-min-4">4#</td>
+                                <td id="g-min-5">5</td>
+                                <td id="g-min-6">6</td>
+                                <td id="g-min-7">7b</td>
+                            </tr>
+    
+                        </tbody>
+                    </table>
+                </div>
+            
+            </main>
+                
+                <div class="notenliste">
+                    <h2 id="mj2">Minor-Modes</h2>
+                    <table id="tb1">
+                        <thead>
+                            <tr>
+                                <th>Minor Modes</th>
+                                <th>I</th>
+                                <th>II</th>
+                                <th>III</th>
+                                <th>IV</th>
+                                <th>V</th>
+                                <th>VI</th>
+                                <th>VII</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="g-min">Minor-Scale</td>
+                                <td id="g-min-1">1</td>
+                                <td id="g-min-2">2</td>
+                                <td id="g-min-3">3b</td>
+                                <td id="g-min-4">4</td>
+                                <td id="g-min-5">5</td>
+                                <td id="g-min-6">6b</td>
+                                <td id="g-min-7">7b</td>
+                            </tr>
+                            <tr>
+                                <td id="c-min">Dorian</td>
+                                <td id="c-min-1">R</td>
+                                <td id="c-min-2">2</td>
+                                <td id="c-min-3">3b</td>
+                                <td id="c-min-4">4</td>
+                                <td id="c-min-5">5</td>
+                                <td id="c-min-6">6</td>
+                                <td id="c-min-7">7b</td>
+                            </tr>
+                            <tr>
+                                <td id="d-min">Phrygian Dominant</td>
+                                <td id="d-min-1">R</td>
+                                <td id="d-min-2">2b</td>
+                                <td id="d-min-3">3b</td>
+                                <td id="d-min-4">4</td>
+                                <td id="d-min-5">5</td>
+                                <td id="d-min-6">6b</td>
+                                <td id="d-min-7">7b</td>
+                            </tr>
+                            <tr>
+                                <td id="e-min">Aeolian</td>
+                                <td id="e-min-1">R</td>
+                                <td id="e-min-2">2</td>
+                                <td id="e-min-3">3b</td>
+                                <td id="e-min-4">4</td>
+                                <td id="e-min-5">5</td>
+                                <td id="e-min-6">6b</td>
+                                <td id="e-min-7">7b</td>
+                            </tr>
+                            <tr>
+                                <td id="f-min">Locrian</td>
+                                <td id="f-min-1">R</td>
+                                <td id="f-min-2">2b</td>
+                                <td id="f-min-3">3b</td>
+                                <td id="f-min-4">4</td>
+                                <td id="f-min-5">5b</td>
+                                <td id="f-min-6">6b</td>
+                                <td id="f-min-7">7b</td>
+                            </tr>
+                            <tr>
+                                <td id="a-min">Harmonic Minor</td>
+                                <td id="a-min-1">R</td>
+                                <td id="a-min-2">2</td>
+                                <td id="a-min-3">3b</td>
+                                <td id="a-min-4">4</td>
+                                <td id="a-min-5">5</td>
+                                <td id="a-min-6">6b</td>
+                                <td id="a-min-7">7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </main>
+
+
+            </footer>
+                <script src="script.js"></script>
+        
+        </body>
+        </html>
+        
+
+
+    </main>
+        <footer>
+            <div class="footer-content">
+                <ul>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <script src="script.js"></script>
+    </body>
+    </html>

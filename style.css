@@ -1,0 +1,608 @@
+:root{
+  --background-color: white;                
+  --darker-background-color: #b1e2f0;
+  --accent-color: rgb(157, 200, 229);
+  --text-color: black;
+  --navbar-height: 80px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  color:white;
+}
+
+body{
+  /*wichtige Einstellungen für ein passendes Hintergrundbild*/
+  min-height: 100vh;
+  background-color: rgb(15, 15, 26);
+  background-image: url(image/mp.jpg);
+  background-size: 100% 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:white;
+}
+
+h1{
+  color:rgb(255, 255, 255);
+  text-underline-offset: 10px;
+  padding: 5px;
+  box-shadow: 5px black;
+  text-align: center
+}
+
+nav.logo{
+  margin-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  font-variant: small-caps;
+  text-decoration: none;
+}
+
+nav{
+  margin-top:5px;
+  box-shadow: 5px 5px 5px rgb(173, 0, 0);
+  width: 100%;
+  height: 50px;
+  background-color: rgb(88, 0, 0);
+}
+
+nav li{
+  height: 50px;
+  width: 100%;
+}
+
+nav a{
+  height: 100%;
+  display: flex;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav a :hover{
+  background-color: rgba(255, 255, 255, 0.151);
+  border-radius: 15%; 
+}
+
+nav li:first-child{     /*um alles nach rechts zu setzen */
+  margin-right: auto;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+#o{
+  list-style: none;
+  color:white;
+  padding:30px 30px 50px 75px;
+}
+
+#o:hover{
+  padding: 30px 5px 55px 55px;
+  color: red;
+  transition: 1s;
+}
+
+.sidebar{
+  position: fixed;
+  top:0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  z-index: 99;
+  background-color: rgba(255, 0, 0, 0.202);
+  backdrop-filter: blur(40px);
+  box-shadow: -10px 0 10px black;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width:100%
+}
+
+.sidebar a{
+  width: 100%;
+}
+
+.toggle_button{
+  width: 30px;
+  height: 23px;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+li #svg{
+  margin-right: 20px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Zentriert die Elemente horizontal */
+  align-items: center; /* Zentriert die Elemente vertikal */
+  margin-top: 50px; /* Platzhalter für den Abstand vom oberen Rand */
+}
+
+.image-box {
+  width: 45%; /* Reduzierte Breite, damit zwei Bilder nebeneinander passen */
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center; /* Zentriert den Text horizontal innerhalb des div */
+  margin: 10px; /* Abstand zwischen den Bildern */
+  background-color: rgba(89, 0, 0, 0.9); /* Hintergrundfarbe mit Transparenz */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schattierung */
+  transition: all 0.3s ease; /* Sanfter Übergang für Hover-Effekte */
+}
+
+.image-box:hover {
+  transform: translateY(-5px); /* Bild beim Überfahren mit der Maus anheben */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stärkere Schattierung */
+}
+
+.image-box img {
+  display: block; /* Entfernt den Standardabstand unterhalb des Bildes */
+  margin: 0 auto; /* Zentriert das Bild horizontal */
+  width: 100%; /* Vollständige Breite innerhalb des Containers */
+  height: auto; /* Automatische Höhe beibehalten */
+  border-radius: 10px; /* Abgerundete Ecken */
+  filter: brightness(80%); /* Reduziert die Helligkeit des Bildes */
+}
+
+.image-box p {
+  margin-top: 10px; /* Abstand zwischen Bild und Beschreibung */
+  color: white; /* Textfarbe */
+  font-size: 14px; /* Schriftgröße */
+}
+.resize-image {
+    width: 200px; /* Breite des Bildes */
+    height: 150px; /* Höhe des Bildes */
+}
+
+.description:hover {
+  border-color: rgba(255, 0, 0, 0.199); /* Ändern der Rahmenfarbe beim Überfahren mit der Maus */
+}
+
+.small-description{
+  display:none
+}
+
+.more-info-link {
+  border: 2px solid rgba(255, 255, 255, 0.8); /* Umrandung mit Transparenz */
+  border-radius: 10px; /* Abgerundete Ecken */
+  padding: 10px 20px; /* Innenabstand */
+  display: inline-block; /* Element als Block darstellen, um die Breite anzupassen */
+  margin-top: 10px; /* Abstand nach oben */
+  transition: border-color 0.3s, color 0.3s; /* Übergänge für Hover-Effekte */
+  text-decoration: none; /* Entfernen von Unterstreichungen */
+  color: white; /* Textfarbe */
+}
+
+#am{
+  border: 2px solid rgba(192, 0, 0, 0.8); /* Umrandung mit Transparenz */
+  border-radius: 10px; /* Abgerundete Ecken */
+  padding: 10px 20px; /* Innenabstand */
+  display: inline-block; /* Element als Block darstellen, um die Breite anzupassen */
+  margin-top: 10px; /* Abstand nach oben */
+  transition: border-color 0.3s, color 0.3s; /* Übergänge für Hover-Effekte */
+  text-decoration: none; /* Entfernen von Unterstreichungen */
+  color: white; /* Textfarbe */
+}
+#am:hover {
+  background-color: rgba(192, 0, 0, 0.8); /* Rote Hintergrundfarbe bei Hover */
+  color: white; /* Weiße Schriftfarbe bei Hover beibehalten */
+}
+
+.more-info-link:hover {
+  border-color: rgb(255, 0, 0); /* Ändern der Rahmenfarbe beim Überfahren mit der Maus */
+  color: rgb(255, 0, 0); /* Ändern der Textfarbe beim Überfahren mit der Maus */
+}
+
+.bar{
+  height: 4px;
+  width: 100%;
+  background: var(--text-color);
+  border-radius: 100px;
+}
+footer {
+  background-color: black; /* Schwarzer Hintergrund */
+  padding: 20px; /* Innenabstand */
+  position: relative;
+  left: 0;
+  bottom: 0;
+  margin-top:10px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+#footer2{
+  background-color: black; /* Schwarzer Hintergrund */
+  padding: 20px; /* Innenabstand */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+.footer-content ul {
+  list-style-type: none; /* Entfernt die Standardliste */
+  padding: 0;
+  text-align: center; /* Zentriert den Text horizontal */
+}
+
+.footer-content ul li {
+  display: inline; /* Elemente nebeneinander anzeigen */
+  margin: 0 10px; /* Abstand zwischen den Elementen */
+}
+
+.footer-content ul li a {
+  color: white; /* Textfarbe */
+  text-decoration: none; /* Entfernt Unterstreichungen */
+  transition: border-bottom 0.3s; /* Übergang für Hover-Effekt */
+}
+
+.footer-content ul li a:hover {
+  border-bottom: 2px solid red; /* Roter Laserstrahl-Effekt */
+}
+
+#txt{
+  margin-top:40px;
+  font-weight: 200;
+  font-size-adjust: 2px;
+  color: rgb(255, 255, 255);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+@media (min-width: 650px){
+  footer {
+    position: relative; /* Ändere die Positionierung auf relative ab einer bestimmten Bildschirmbreite */
+  }
+  #footer2{
+    background-color: black; /* Schwarzer Hintergrund */
+    padding: 20px; /* Innenabstand */
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+  }
+  
+}
+@media (max-width: 650px){
+  #footer2{
+    background-color: black; /* Schwarzer Hintergrund */
+    padding: 20px; /* Innenabstand */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+  }
+  footer{
+    margin-top:110px;
+  }
+  .sidebar {
+    width:100%;
+    height: 60%;
+  }
+  .small-description{
+    display:inline-block;
+  }
+  .noten-item {
+    text-align: center;
+    width: 100%;
+}
+
+  #o {
+    text-align: center !important;
+    padding: 0;
+    margin: 0 auto;
+    flex: 1;   /*Mit flex: 1 deklariert jedes Element, dass es sowohl wachsen als auch schrumpfen kann, um sich an den verfügbaren Platz anzupassen. Das sorgt dafür, dass der Text genau in der Mitte zwischen den Trennstrichen positioniert wird, unabhängig von der Anzahl der Elemente in der Sidebar.*/
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+  }
+
+  #o:hover {
+    padding:0;
+  }
+
+  .sidebar li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+    flex: 1; /* Hinzugefügt */
+  }
+
+  .sidebar li:last-child {
+    border-bottom: none;
+  }
+
+    .description {
+      display: none; /* Verstecke die Beschreibung */
+    }
+  
+    .more-info-link {
+      display: block; /* Zeige den Link "Weitere Informationen anzeigen" als Blockelement an */
+      text-align: center; /* Zentriere den Text */
+      margin-top: 10px; /* Füge einen Abstand nach oben hinzu */
+    }
+    #txt{
+      display:none;
+    }
+    
+  }
+
+  /*-----------------------------------------------------------------------------------------------*/
+/*Produktion*/
+
+  .software-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Abstand zwischen den Software-Elementen */
+}
+
+.software-item {
+    position: relative; /* Positionierung für das Pseudo-Element */
+    align-self: flex-start; /* Standardausrichtung für ungerade Elemente */
+    padding-top: 20px; /* Abstand zum oberen Strich */
+    background-color: rgba(50, 50, 50, 0.925); /* Dunkelgraue Hintergrundfarbe */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+}
+
+.software-item:nth-child(even) {
+    align-self: flex-end; /* Ausrichtung für gerade Elemente */
+}
+
+.software-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.software-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Abstand zum unteren Rand des Software-Elements */
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.software-item:hover::before,
+.software-item:hover::after {
+    opacity: 1;
+    background-color: red;
+}
+
+.software-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10px; /* Höhe des transparenten Bereichs */
+    background-color: rgba(255, 255, 255, 0.822); /* Transparente Hintergrundfarbe */
+}
+
+
+#si4{margin-bottom:5px}
+  /*-----------------------------------------------------------------------------------------------*/
+
+  .noten-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Abstand zwischen den Software-Elementen */
+}
+
+.noten-item {
+    position: relative; /* Positionierung für das Pseudo-Element */
+    align-self: flex-start; /* Standardausrichtung für ungerade Elemente */
+    padding-top: 20px; /* Abstand zum oberen Strich */
+    background-color: rgba(50, 50, 50, 0.925); /* Dunkelgraue Hintergrundfarbe */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+}
+
+.noten-item:nth-child(even) {
+    align-self: flex-end; /* Ausrichtung für gerade Elemente */
+}
+
+.noten-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.noten-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Abstand zum unteren Rand des Software-Elements */
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.noten-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10px; /* Höhe des transparenten Bereichs */
+    background-color: rgba(255, 255, 255, 0.822); /* Transparente Hintergrundfarbe */
+}
+.noten-item:hover::before,
+.noten-item:hover::after {
+    opacity: 1;
+    background-color: red;
+}
+
+#si{
+  margin-top:15px;
+}
+
+#mj1, #mj2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+  background-color: rgb(192, 0, 0);
+  padding: 10px 20px; /* Padding für das eckige Feld */
+  border-radius: 8px; /* Abgerundete Ecken */
+  display: inline-block; /* Um das Element inline zu machen */
+  cursor: pointer; /* Cursor ändern, um anzuzeigen, dass es anklickbar ist */
+  line-height: 1; /* Verhindert, dass der Text den Container vertikal zentriert */
+}
+
+#mj3{
+  text-align: center;
+  margin-top:50px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: rgb(192, 0, 0);
+  padding: 10px 20px; /* Padding für das eckige Feld */
+  border-radius: 8px; /* Abgerundete Ecken */
+  display: inline-block; /* Um das Element inline zu machen */
+  cursor: pointer; /* Cursor ändern, um anzuzeigen, dass es anklickbar ist */
+  line-height: 1; /* Verhindert, dass der Text den Container vertikal zentriert */
+}
+
+#mj4{
+  text-align: center;
+  margin-top:-50px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: rgb(192, 0, 0);
+  padding: 10px 20px; /* Padding für das eckige Feld */
+  border-radius: 8px; /* Abgerundete Ecken */
+  display: inline-block; /* Um das Element inline zu machen */
+  cursor: pointer; /* Cursor ändern, um anzuzeigen, dass es anklickbar ist */
+  line-height: 1; /* Verhindert, dass der Text den Container vertikal zentriert */
+}
+  /*-----------------------------------------------------------------------------------------------*/
+/*Minor und Major-Modes
+
+        /* CSS-Stile für die Searchbox */
+        .search-box {
+          text-align: center; /* Zentriert den Inhalt horizontal */
+          margin-top: 50px; /* Abstand nach oben */
+      }
+      
+      .search-box input[type="text"] {
+          width: 300px; /* Breite des Eingabefelds */
+          padding: 10px; /* Innenabstand */
+          border: 1px solid #ccc; /* Rahmenstil und Farbe */
+          border-radius: 5px; /* Abrundung der Ecken */
+          font-size: 16px; /* Schriftgröße */
+          background-color: #f9f9f9; /* Hintergrundfarbe */
+          color: #333; /* Textfarbe */
+          outline: none; /* Entfernt den Standard-Rahmen beim Fokussieren */
+      }
+      
+      .search-box input[type="text"]:focus {
+          border-color: #ff0000; /* Farbe des Rahmens beim Fokussieren */
+      }
+      
+      .search-box button {
+          padding: 10px 20px; /* Innenabstand */
+          background-color: #710006; /* Hintergrundfarbe */
+          color: #fff; /* Textfarbe */
+          border: none; /* Entfernt den Rahmen */
+          border-radius: 5px; /* Abrundung der Ecken */
+          font-size: 16px; /* Schriftgröße */
+          cursor: pointer; /* Ändert den Mauszeiger beim Überfahren */
+          transition: background-color 0.3s; /* Übergangseffekt */
+      }
+      
+      .search-box button:hover {
+          background-color: #b30000; /* Hintergrundfarbe beim Überfahren */
+      }
+
+      #one{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: red;
+      }
+
+      .notenliste{
+        margin-top:100px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto; /* Zentralisieren der Tabelle */
+        background-color: white;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+        height: 10px;
+        color: black;
+    }
+    td {
+        color: black;
+    }
+
+    #tb1{
+      margin-bottom:35px;
+    }
+
+    #c-dur, #d-dur, #e-dur, #f-dur, #g-dur{
+      color: black;
+    }
+/*-----------------------------------------------------------------------------------------------*/
+#img1 {
+  display: block;
+  margin: 10px auto 0; /* 50px Abstand nach oben, automatische Zentrierung seitlich */
+  max-width: 100%;
+  height: auto;
+}
+
+#tt{
+  color:black;
+}
+/*-----------------------------------------------------------------------------------------------*/
+#q1 {
+  position: relative;
+  margin-top: 20px; /* Abstand zum Bild darüber */
+  background-color: rgba(50, 50, 50, 0.932); /* Transparentes Dunkelgrau */
+  padding: 10px; /* Innenabstand für den Text */
+  border-radius: 10px; /* Abgerundete Ecken */
+}
+
+#t5{
+  margin-top:10px;
+}
