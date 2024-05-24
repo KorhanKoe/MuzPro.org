@@ -303,8 +303,9 @@ footer {
     display:inline-block;
   }
   .noten-item {
+    border-radius: 10px; 
     text-align: center;
-    width: 100%;
+    width: 90%;
 }
 
   #o {
@@ -410,7 +411,7 @@ footer {
 
 #si4{margin-bottom:5px}
   /*-----------------------------------------------------------------------------------------------*/
-
+Noten
   .noten-list {
     display: flex;
     flex-direction: column;
