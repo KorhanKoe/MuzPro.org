@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Seitentitel -->
+    <title>MuzPro.org</title>
+    <!-- CSS-Bibliotheken -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Eigene CSS-Datei -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h1>MuzPro.org</h1> 
+        <!-- Toggle-Schalter für die Sidebar -->
+        <label for="toggle_button" class="toggle_button">
+            <li onclick="showSidebar()"><a href="#"><i class="fa fa-bars" aria-hidden="true" style="color:white; font-size:35px; margin-right: 20px"></i></a></li>
+        </label>
+        <!-- Sidebar-Menü -->
+        <ul class="sidebar">
+        <!-- Schließen-Schaltfläche für die Sidebar -->
+            <li onclick="hideSidebar()" id="svg">
+                <a href="#">
+                    <!-- SVG-Symbol zum Schließen der Sidebar -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="white" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a>
+            </li>
+            <!-- Navigationslinks -->
+            <li><a href="MuzPro.org.html" id="o">Start</a></li>
+            <li><a href="Produktion.html" id="o">Produktion</a></li>
+            <li><a href="minor_scale.html" id="o">Minor</a></li>
+            <li><a href="modes.html" id="o">Modes</a></li>
+            <li><a href="Songwriting.html" id="o">Chord Porgressions</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hauptinhalt -->
+    <main>
+        <div class="notenliste">
+        <!-- Überschrift für alle Tonleitern -->
+            <h2 id="mj4">Alle Tonleitern der Major-Reihe</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                    <!-- Notenabstände W für Whole-Step, H für Half-Step -->
+                        <th>Noten</th>
+                        <th>W</th>
+                        <th>W</th>
+                        <th>H</th>
+                        <th>W</th>
+                        <th>W</th>
+                        <th>W</th>
+                        <th>H</th>
+                        <th>W</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- C-Major -->
+                        <td id="c-dur">C Major</td>
+                        <td id="c-dur-1">C</td>
+                        <td id="c-dur-2">D</td>
+                        <td id="c-dur-3">E</td>
+                        <td id="c-dur-4">F</td>
+                        <td id="c-dur-5">G</td>
+                        <td id="c-dur-6">A</td>
+                        <td id="c-dur-7">B</td>
+                        <td id="c-dur-8">C</td>
+                    </tr>
+                    <tr>
+                        <!-- G-Major -->
+                        <td id="g-dur">G Major</td>
+                        <td id="g-dur-1">G</td>
+                        <td id="g-dur-2">A</td>
+                        <td id="g-dur-3">B</td>
+                        <td id="g-dur-4">C</td>
+                        <td id="g-dur-5">D</td>
+                        <td id="g-dur-6">E</td>
+                        <td id="g-dur-7">F#</td>
+                        <td id="g-dur-8">G</td>
+                    </tr>
+                    <tr>
+                        <!-- D-Major -->
+                        <td id="d-dur">D Major</td>
+                        <td id="d-dur-1">D</td>
+                        <td id="d-dur-2">E</td>
+                        <td id="d-dur-3">F#</td>
+                        <td id="d-dur-4">G</td>
+                        <td id="d-dur-5">A</td>
+                        <td id="d-dur-6">B</td>
+                        <td id="d-dur-7">C#</td>
+                        <td id="d-dur-8">D</td>
+                    </tr>
+                    <tr>
+                        <!-- A-Major -->
+                        <td id="a-dur">A Major</td>
+                        <td id="a-dur-1">A</td>
+                        <td id="a-dur-2">B</td>
+                        <td id="a-dur-3">C#</td>
+                        <td id="a-dur-4">D</td>
+                        <td id="a-dur-5">E</td>
+                        <td id="a-dur-6">F#</td>
+                        <td id="a-dur-7">G#</td>
+                        <td id="a-dur-8">A</td>
+                    </tr>
+                    <tr>
+                        <!-- E-Major -->
+                        <td id="e-dur">E Major</td>
+                        <td id="e-dur-1">E</td>
+                        <td id="e-dur-2">F#</td>
+                        <td id="e-dur-3">G#</td>
+                        <td id="e-dur-4">A</td>
+                        <td id="e-dur-5">B</td>
+                        <td id="e-dur-6">C#</td>
+                        <td id="e-dur-7">D#</td>
+                        <td id="e-dur-8">E</td>
+                    </tr>
+                    <tr>
+                        <!-- B-Major -->
+                        <td id="b-dur">B Major</td>
+                        <td id="b-dur-1">B</td>
+                        <td id="b-dur-2">C#</td>
+                        <td id="b-dur-3">D#</td>
+                        <td id="b-dur-4">E</td>
+                        <td id="b-dur-5">F#</td>
+                        <td id="b-dur-6">G#</td>
+                        <td id="b-dur-7">A#</td>
+                        <td id="b-dur-8">B</td>
+                    </tr>
+                    <tr>
+                        <!-- F#-Major -->
+                        <td id="f#-dur">F# Major</td>
+                        <td id="f#-dur-1">F#</td>
+                        <td id="f#-dur-2">G#</td>
+                        <td id="f#-dur-3">A#</td>
+                        <td id="f#-dur-4">B</td>
+                        <td id="f#-dur-5">C#</td>
+                        <td id="f#-dur-6">D#</td>
+                        <td id="f#-dur-7">E#</td>
+                        <td id="f#-dur-8">F#</td>
+                    </tr>
+                    <tr>
+                        <!-- C#-Major -->
+                        <td id="c#-dur">C# Major</td>
+                        <td id="c#-dur-1">C#</td>
+                        <td id="c#-dur-2">D#</td>
+                        <td id="c#-dur-3">E#</td>
+                        <td id="c#-dur-4">F#</td>
+                        <td id="c#-dur-5">G#</td>
+                        <td id="c#-dur-6">A#</td>
+                        <td id="c#-dur-7">B#</td>
+                        <td id="c#-dur-8">C#</td>
+                    </tr>
+                    <tr>
+                        <!-- F-Major -->
+                        <td id="f-dur">F Major</td>
+                        <td id="f-dur-1">F</td>
+                        <td id="f-dur-2">G</td>
+                        <td id="f-dur-3">A</td>
+                        <td id="f-dur-4">Bb</td>
+                        <td id="f-dur-5">C</td>
+                        <td id="f-dur-6">D</td>
+                        <td id="f-dur-7">E</td>
+                        <td id="f-dur-8">F</td>
+                    </tr>
+                    <tr>
+                        <!-- Bb-Major -->
+                        <td id="bb-dur">Bb Major</td>
+                        <td id="bb-dur-1">Bb</td>
+                        <td id="bb-dur-2">C</td>
+                        <td id="bb-dur-3">D</td>
+                        <td id="bb-dur-4">Eb</td>
+                        <td id="bb-dur-5">F</td>
+                        <td id="bb-dur-6">G</td>
+                        <td id="bb-dur-7">A</td>
+                        <td id="bb-dur-8">Bb</td>
+                    </tr>
+                    <tr>
+                        <!-- Eb-Major -->
+                        <td id="eb-dur">Eb Major</td>
+                        <td id="eb-dur-1">Eb</td>
+                        <td id="eb-dur-2">F</td>
+                        <td id="eb-dur-3">G</td>
+                        <td id="eb-dur-4">Ab</td>
+                        <td id="eb-dur-5">Bb</td>
+                        <td id="eb-dur-6">C</td>
+                        <td id="eb-dur-7">D</td>
+                        <td id="eb-dur-8">Eb</td>
+                    </tr>
+                    <tr>
+                        <!-- Ab-Major -->
+                        <td id="ab-dur">Ab Major</td>
+                        <td id="ab-dur-1">Ab</td>
+                        <td id="ab-dur-2">Bb</td>
+                        <td id="ab-dur-3">C</td>
+                        <td id="ab-dur-4">Db</td>
+                        <td id="ab-dur-5">Eb</td>
+                        <td id="ab-dur-6">F</td>
+                        <td id="ab-dur-7">G</td>
+                        <td id="ab-dur-8">Ab</td>
+                    </tr>
+                    <tr>
+                        <!-- Db-Major -->
+                        <td id="db-dur">Db Major</td>
+                        <td id="db-dur-1">Db</td>
+                        <td id="db-dur-2">Eb</td>
+                        <td id="db-dur-3">F</td>
+                        <td id="db-dur-4">Gb</td>
+                        <td id="db-dur-5">Ab</td>
+                        <td id="db-dur-6">Bb</td>
+                        <td id="db-dur-7">C</td>
+                        <td id="db-dur-8">Db</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="notenliste">
+        <!-- Überschrift für Major-Progressions -->
+            <h2 id="mj3">Major-Progression</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tonart</th>
+                        <th>I</th>
+                        <th>II</th>
+                        <th>III</th>
+                        <th>IV</th>
+                        <th>V</th>
+                        <th>VI</th>
+                        <th>VII</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- C-Major Progressionen -->
+                        <td id="c-dur">C Major</td>
+                        <td id="c-dur-1">C</td>
+                        <td id="c-dur-2">Dmin</td>
+                        <td id="c-dur-3">Emin</td>
+                        <td id="c-dur-4">F</td>
+                        <td id="c-dur-5">G</td>
+                        <td id="c-dur-6">Amin</td>
+                        <td id="c-dur-7">Bdim</td>
+                    </tr>
+                    <tr>
+                        <!-- D-Major Progressionen -->
+                        <td id="d-dur">D Major</td>
+                        <td id="d-dur-1">D</td>
+                        <td id="d-dur-2">Emin</td>
+                        <td id="d-dur-3">F#min</td>
+                        <td id="d-dur-4">G</td>
+                        <td id="d-dur-5">A</td>
+                        <td id="d-dur-6">Bmin</td>
+                        <td id="d-dur-7">C#dim</td>
+                    </tr>
+                    <tr>
+                        <!-- E-Major Progressionen -->
+                        <td id="e-dur">E Major</td>
+                        <td id="e-dur-1">E</td>
+                        <td id="e-dur-2">F#min</td>
+                        <td id="e-dur-3">G#min</td>
+                        <td id="e-dur-4">A</td>
+                        <td id="e-dur-5">B</td>
+                        <td id="e-dur-6">C#min</td>
+                        <td id="e-dur-7">D#dim</td>
+                    </tr>
+                    <tr>
+                        <!-- F-Major Progressionen -->
+                        <td id="f-dur">F Major</td>
+                        <td id="f-dur-1">F</td>
+                        <td id="f-dur-2">Gmin</td>
+                        <td id="f-dur-3">Amin</td>
+                        <td id="f-dur-4">Bb</td>
+                        <td id="f-dur-5">C</td>
+                        <td id="f-dur-6">Dmin</td>
+                        <td id="f-dur-7">Edim</td>
+                    </tr>
+                    <tr>
+                        <!-- G-Major Progressionen -->
+                        <td id="g-dur">G Major</td>
+                        <td id="g-dur-1">G</td>
+                        <td id="g-dur-2">Amin</td>
+                        <td id="g-dur-3">Bmin</td>
+                        <td id="g-dur-4">C</td>
+                        <td id="g-dur-5">D</td>
+                        <td id="g-dur-6">Emin</td>
+                        <td id="g-dur-7">F#dim</td>
+                    </tr>
+                    <tr>
+                        <!-- A-Major Progressionen -->
+                        <td id="a-dur">A Major</td>
+                        <td id="a-dur-1">A</td>
+                        <td id="a-dur-2">Bmin</td>
+                        <td id="a-dur-3">C#min</td>
+                        <td id="a-dur-4">D</td>
+                        <td id="a-dur-5">E</td>
+                        <td id="a-dur-6">F#min</td>
+                        <td id="a-dur-7">G#dim</td>
+                    </tr>
+                    <tr>
+                        <!-- B-Major Progressionen -->
+                        <td id="b-dur">B Major</td>
+                        <td id="b-dur-1">B</td>
+                        <td id="b-dur-2">C#min</td>
+                        <td id="b-dur-3">D#min</td>
+                        <td id="b-dur-4">E</td>
+                        <td id="b-dur-5">F#</td>
+                        <td id="b-dur-6">G#min</td>
+                        <td id="b-dur-7">A#dim</td>
+                    </tr>
+                    <tr>
+                        <!-- C#-Major Progressionen -->
+                        <td id="c#-dur">C# Major</td>
+                        <td id="c#-dur-1">C#</td>
+                        <td id="c#-dur-2">D#min</td>
+                        <td id="c#-dur-3">E#min</td>
+                        <td id="c#-dur-4">F#</td>
+                        <td id="c#-dur-5">G#</td>
+                        <td id="c#-dur-6">A#min</td>
+                        <td id="c#-dur-7">B#dim</td>
+                    </tr>
+                    <tr>
+                        <!-- F#-Major Progressionen -->
+                        <td id="f#-dur">F# Major</td>
+                        <td id="f#-dur-1">F#</td>
+                        <td id="f#-dur-2">G#min</td>
+                        <td id="f#-dur-3">A#min</td>
+                        <td id="f#-dur-4">B</td>
+                        <td id="f#-dur-5">C#</td>
+                        <td id="f#-dur-6">D#min</td>
+                        <td id="f#-dur-7">E#dim</td>
+                    </tr>
+                    <tr>
+                        <!-- Ab-Major Progressionen -->
+                        <td id="b-flat-dur">Ab Major</td>
+                        <td id="b-flat-dur-1">Ab</td>
+                        <td id="b-flat-dur-2">Bbmin</td>
+                        <td id="b-flat-dur-3">Cmin</td>
+                        <td id="b-flat-dur-4">Db</td>
+                        <td id="b-flat-dur-5">Eb</td>
+                        <td id="b-flat-dur-6">Fmin</td>
+                        <td id="b-flat-dur-7">Gdim</td>
+                    </tr>
+                    <tr>
+                        <!-- Bb-Major Progressionen -->
+                        <td id="e-flat-dur">Bb Major</td>
+                        <td id="e-flat-dur-1">Bb</td>
+                        <td id="e-flat-dur-2">Cmin</td>
+                        <td id="e-flat-dur-3">Dmin</td>
+                        <td id="e-flat-dur-4">Eb</td>
+                        <td id="e-flat-dur-5">F</td>
+                        <td id="e-flat-dur-6">Gmin</td>
+                        <td id="e-flat-dur-7">Adim</td>
+                    </tr>
+                    <tr>
+                        <!-- Db-Major Progressionen -->
+                        <td id="a-flat-dur">Db Major</td>
+                        <td id="a-flat-dur-1">Db</td>
+                        <td id="a-flat-dur-2">Ebmin</td>
+                        <td id="a-flat-dur-3">Fmin</td>
+                        <td id="a-flat-dur-4">Gb</td>
+                        <td id="a-flat-dur-5">Ab</td>
+                        <td id="a-flat-dur-6">Bbmin</td>
+                        <td id="a-flat-dur-7">Cdim</td>
+                    </tr>
+                    <tr>
+                        <!-- Eb-Major Progressionen -->
+                        <td id="a-flat-dur">Eb Major</td>
+                        <td id="a-flat-dur-1">Eb</td>
+                        <td id="a-flat-dur-2">Fmin</td>
+                        <td id="a-flat-dur-3">Gmin</td>
+                        <td id="a-flat-dur-4">Ab</td>
+                        <td id="a-flat-dur-5">Bb</td>
+                        <td id="a-flat-dur-6">Cmin</td>
+                        <td id="a-flat-dur-7">Ddim</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <Footer>
+        <div class="footer-content">
+            <!-- Liste von Fußzeilenlinks -->
+            <ul>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+        </div>
+    </Footer>
+
+    <!-- Skriptdatei -->
+    <script src="script.js"></script>
+
+</body>
+</html>

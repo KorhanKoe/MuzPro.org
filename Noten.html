@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Seitentitel -->
+    <title>MuzPro.org</title>
+    <!-- CSS-Bibliotheken -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Eigene CSS-Datei -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h1>MuzPro.org</h1> 
+        <!-- Toggle-Schalter für die Sidebar -->
+        <label for="toggle_button" class="toggle_button">
+            <li onclick="showSidebar()"><a href="#"><i class="fa fa-bars" aria-hidden="true" style="color:white; font-size:35px; margin-right: 20px"></i></a></li>
+        </label>
+        <!-- Sidebar-Menü -->
+        <ul class="sidebar">
+        <!-- Schließen-Schaltfläche für die Sidebar -->
+            <li onclick="hideSidebar()" id="svg">
+                <a href="#">
+                    <!-- SVG-Symbol zum Schließen der Sidebar -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="white" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a>
+            </li>
+            <!-- Navigationslinks -->
+            <li><a href="MuzPro.org.html" id="o">Start</a></li>
+            <li><a href="Produktion.html" id="o">Produktion</a></li>
+            <li><a href="major_scale.html" id="o">Major</a></li>
+            <li><a href="minor_scale.html" id="o">Minor</a></li>
+            <li><a href="modes.html" id="o">Modes</a></li>
+            <li><a href="Songwriting.html" id="o">Chord Porgressions</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="noten-list">
+            <div class="noten-item" id="si">
+                <h2>Major</h2>
+                <p class="description">"Major" bezieht sich in der Musiktheorie auf eine Durtonleiter, die oft als heller oder fröhlicher empfunden wird. In der Harmonielehre repräsentiert ein Durakkord, der auf dem Grundton der Tonleiter basiert, die Stabilität und das Zentrum der Tonart. Musikstücke in Dur-Tonarten neigen dazu, eine positive Stimmung zu vermitteln und werden häufig in populären Songs und Happy-End-Szenen verwendet.</p>
+                <a href="major_scale.html" class="more-info-link">Weitere Informationen</a>
+            </div>  
+              
+            <div class="noten-list">
+                <div class="noten-item" id="si">
+                    <h2>Minor</h2>
+                    <p class="description">"Minor" beschreibt eine Molltonleiter, die in der Musik oft eine melancholische oder düstere Stimmung vermittelt. Diese Tonart wird häufig verwendet, um Emotionen wie Trauer, Melancholie oder Sehnsucht auszudrücken und findet sich oft in Balladen oder intensiven Dramen. In der Harmonielehre steht ein Mollakkord im Gegensatz zum Durakkord und verleiht einem Stück eine gewisse Spannung oder Unruhe.</p>
+                    <a href="minor_scale.html" class="more-info-link">Weitere Informationen</a>
+                </div>   
+        
+    </main>
+    
+    <Footer>
+        <div class="footer-content">
+            <!-- Liste von Fußzeilenlinks -->
+            <ul>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+        </div>
+    </Footer>
+    <!-- Skriptdatei -->
+    <script src="script.js"></script>
+
+</body>
+</html>

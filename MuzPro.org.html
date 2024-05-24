@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Seitentitel -->
+    <title>MuzPro.org</title>
+    <!-- CSS-Bibliotheken -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Eigene CSS-Datei -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h1>MuzPro.org</h1> 
+        <!-- Toggle-Schalter für die Sidebar -->
+        <label for="toggle_button" class="toggle_button">
+            <li onclick="showSidebar()"><a href="#"><i class="fa fa-bars" aria-hidden="true" style="color:white; font-size:35px; margin-right: 20px"></i></a></li>
+        </label>
+        <!-- Sidebar-Menü -->
+        <ul class="sidebar">
+        <!-- Schließen-Schaltfläche für die Sidebar -->
+            <li onclick="hideSidebar()" id="svg">
+                <a href="#">
+                    <!-- SVG-Symbol zum Schließen der Sidebar -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="white" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a>
+            </li>
+            <!-- Navigationslinks -->
+            <li><a href="MuzPro.org.html" id="o">Start</a></li>
+            <li><a href="Produktion.html" id="o">Produktion</a></li>
+            <li><a href="major_scale.html" id="o">Major</a></li>
+            <li><a href="minor_scale.html" id="o">Minor</a></li>
+            <li><a href="modes.html" id="o">Modes</a></li>
+            <li><a href="Songwriting.html" id="o">Chord Porgressions</a></li>
+        </ul>
+    </nav>
+<main>
+    <div class="image-grid">
+        <div class="image-box" onmouseover="addShadow(this)" onmouseout="removeShadow(this)">
+            <img src="image/muzpro2.jpg" alt="Bild 1" height="200px" width="250px">
+            <div class="description" onclick="toggleDescription(this)">
+                <h2>Produktion</h2>
+                <p>Die Produktion ist das kreative Herzstück, in dem Ideen zu greifbaren Realitäten werden.
+                    Hier entstehen Musikstücke, die das Publikum berühren und bewegen. Jeder Schritt, 
+                    von der Aufnahme bis zur Abmischung, trägt dazu bei, den Klang zu formen und zu veredeln. 
+                    Durch die Produktion erhalten die musikalischen Visionen einen einzigartigen Ausdruck und 
+                    Charakter. Es ist der Prozess, der die Rohmaterialien der Kreativität 
+                    in Kunstwerke von bleibendem Wert verwandelt.</p>
+                    <a href="Produktion.html" class="more-info-link" onclick="toggleDescription(this)">Weitere Informationen anzeigen</a>
+            </div>
+            <div class="description">
+                <!-- Ursprüngliche Beschreibung -->
+              </div>
+              <div class="small-description">
+                Alle notwendigen Informationen für die Produktion.
+                <a href="Produktion.html" class="more-info-link" onclick="toggleDescription(this)">Weitere Informationen anzeigen</a>
+              </div>
+              
+        </div>
+        <div class="image-box" onmouseover="addShadow(this)" onmouseout="removeShadow(this)">
+            <img src="image/muzpro1.jpg" alt="Bild 2" height="200px" width="250px">
+            <div class="description" onclick="toggleDescription(this)">
+                <h2>Noten</h2>
+                <p>Noten sind die Sprache der Musik, die Melodien und Harmonien 
+                    in einer visuellen Form darstellen. Sie sind wie geheime Symbole, 
+                    die Musiker verstehen und interpretieren können. Jede Note trägt eine
+                     eigene Bedeutung und verbindet sich mit anderen, um komplexe Klanglandschaften 
+                     zu erschaffen. Beim Betrachten von Noten entsteht die Vorstellungskraft, wie 
+                     sie klingen könnten, und Musiker können sie zum Leben erwecken. Notenblätter 
+                     sind Fenster in die Welt der Musik, die uns einladen, 
+                     ihre Schönheit zu entdecken und zu genießen.
+                </p>
+                <a href="Noten.html" class="more-info-link" onclick="toggleDescription(this)">Weitere Informationen anzeigen</a>
+            </div>
+            <div class="description">
+              </div>
+              <div class="small-description">
+                Alle Noten im Überblick.
+                <a href="Noten.html" class="more-info-link" onclick="toggleDescription(this)">Weitere Informationen anzeigen</a>
+              </div>
+              
+        </div>
+        <div class="image-box" onmouseover="addShadow(this)" onmouseout="removeShadow(this)">
+            <img src="image/muzpro3.jpg" alt="Bild 3" height="200px" width="250px">
+            <div class="description" onclick="toggleDescription(this)">
+                <h2>Songwriting</h2>
+                <p>Das Songwriting ist eine kreative Kunstform, die die Essenz von Gefühlen und Gedanken in
+                    Musik einfängt. Jeder Song ist eine Geschichte, die erzählt oder ein Gefühl, das ausgedrückt 
+                    wird, und spiegelt die Vielfalt menschlicher Erfahrungen wider. Vom Text über die Melodie bis zur 
+                    Harmonie erfordert das Schreiben eines Songs ein feines Zusammenspiel von Inspiration und 
+                    Handwerkskunst. Songwriter sind die Architekten dieser musikalischen Reisen, die mit Worten und 
+                    Tönen Landschaften der Emotionen erschaffen. Letztendlich können Songs Verbindungen herstellen, 
+                    Trost spenden und uns durch die Höhen und Tiefen des Lebens begleiten.</p>
+                     <a href="Songwriting.html" class="more-info-link" onclick="toggleDescription(this)">Weitere Informationen anzeigen</a>
+            </div>
+            <div class="description">
+              </div>
+              <div class="small-description">
+                Songwriting Tipps und Tricks.
+                <a href="Songwriting.html" class="more-info-link" onclick="toggleDescription(this)">Weitere Informationen anzeigen</a>
+              </div>
+              
+        </div>
+        <div class="image-box" onmouseover="addShadow(this)" onmouseout="removeShadow(this)">
+            <img src="image/muzpro4.jpg" alt="Bild 4" height="200px" width="250px">
+            <div class="description" onclick="toggleDescription(this)">
+                <h2>Modes</h2>
+                <p>Die Modi sind wie verschiedene Farbpaletten für Musiker, die ihnen ermöglichen, 
+                    ihre Melodien in verschiedenen Stimmungen und Emotionen zu malen. 
+                    Jeder Modus hat seinen eigenen einzigartigen Charakter und Klang, der durch die 
+                    Abweichungen von der traditionellen Dur-Tonleiter entsteht. Lydisch strahlt mit seiner 
+                    hellen und majestätischen Atmosphäre, während Phrygisch eine dunklere und mysteriösere 
+                    Stimmung vermittelt. Weitere Modi wie Mixolydisch, Dorian und Äolisch bieten jeweils ihre 
+                    eigenen Nuancen und Ausdrucksformen, die Musiker in ihren Kompositionen erkunden können. 
+                    Die Auswahl des richtigen Modus ermöglicht es den Musikern,
+                    die gewünschte Atmosphäre und Botschaft in ihrer Musik zu vermitteln.</p>
+                    <a href="Modes.html" class="more-info-link" onclick="toggleDescription(this)">Weitere Informationen anzeigen</a>
+            </div>
+            <div class="description">
+              </div>
+              <div class="small-description">
+                Modes und weiteres.
+                <a href="Modes.html" class="more-info-link" onclick="toggleDescription(this)">Weitere Informationen anzeigen</a>
+              </div>
+              
+        </div>
+    </div>
+
+</main>
+
+    <!-- Footer -->
+    <Footer>
+        <div class="footer-content">
+            <!-- Liste von Fußzeilenlinks -->
+            <ul>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+        </div>
+    </Footer>
+
+    <!-- Skriptdatei -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Seitentitel -->
+    <title>MuzPro.org</title>
+    <!-- CSS-Bibliotheken -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Eigene CSS-Datei -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h1>MuzPro.org</h1> 
+        <!-- Toggle-Schalter für die Sidebar -->
+        <label for="toggle_button" class="toggle_button">
+            <li onclick="showSidebar()"><a href="#"><i class="fa fa-bars" aria-hidden="true" style="color:white; font-size:35px; margin-right: 20px"></i></a></li>
+        </label>
+        <!-- Sidebar-Menü -->
+        <ul class="sidebar">
+            <!-- Schließen-Schaltfläche für die Sidebar -->
+            <li onclick="hideSidebar()" id="svg">
+                <a href="#">
+                    <!-- SVG-Symbol zum Schließen der Sidebar -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="white" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a>
+            </li>
+            <!-- Navigationslinks -->
+            <li><a href="MuzPro.org.html" id="o">Start</a></li>
+            <li><a href="Produktion.html" id="o">Produktion</a></li>
+            <li><a href="major_scale.html" id="o">Major</a></li>
+            <li><a href="minor_scale.html" id="o">Minor</a></li>
+            <li><a href="modes.html" id="o">Modes</a></li>
+            <li><a href="Songwriting.html" id="o">Chord Porgressions</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hauptinhalt -->
+    <main>
+                <!-- Überschrift für den Quintenzirkel -->
+                <h2 id="mj3">Quintenzirkel</h2>
+                <!-- Bild für den Quintenzirkel -->
+                <img src="Image/Quintenzirkel.jpg" id="img1" alt="Bild 1" height="200px" width="500px">
+                <!-- Erklärung zum Quintenzirkel -->
+                <p id="q1">Ein Quintenzirkel ist ein Diagramm, das die Beziehung zwischen verschiedenen Tonarten in der Musiktheorie darstellt. 
+                    Es besteht aus einem Kreis, der die zwölf möglichen Tonarten darstellt. Die Tonarten sind so angeordnet, dass 
+                    jede Tonart um eine Quinte (fünf Tonstufen) von der vorherigen entfernt ist, was bedeutet, dass sie einen 
+                    gemeinsamen Ton teilen. Der Quintenzirkel wird oft verwendet, um Tonarten zu analysieren, Modulationen zu planen 
+                    und die Harmonie in der Musik zu verstehen. Er ist ein wesentliches Werkzeug für Komponisten, 
+                    Arrangeure und Musiker, um komplexe harmonische Strukturen zu verstehen und zu verwenden.</p>
+                
+                <div class="notenliste">
+                    <h2 id="mj2">Diatonic Chord Progressions</h2>
+                    <!-- Erklärung zu den diatonischen Akkordprogressionen -->
+                    <p id="q1">Eine Diatonic Chord Progression ist eine Abfolge von Akkorden, die innerhalb derselben
+                        Tonleiter oder Tonart liegen. Sie basiert auf den harmonischen Funktionen und den Akkorden, 
+                        die natürlicherweise in dieser Tonleiter vorkommen, ohne dass chromatische Änderungen vorgenommen werden. 
+                        "Full" und "Half" Diatonic Progressions unterscheiden sich in der Anzahl der Akkorde, die verwendet werden. 
+                        Die "Full" Diatonic Progression umfasst normalerweise alle sieben Akkorde der Tonleiter, während die "Half" 
+                        Diatonic Progression nur eine Auswahl dieser Akkorde enthält, oft vier oder fünf. Die "Full" Progression bietet 
+                        eine umfassendere harmonische Entwicklung, 
+                        während die "Half" Progression eine kompaktere und fokussiertere Struktur aufweist.</p>
+                    <!-- Tabellen-Informationen-->
+                    <table id="t5">
+                            <thead>
+                                <tr>
+                                    <th>I</th>
+                                    <th>II</th>
+                                    <th>III</th>
+                                    <th>Full</th>
+                                    <th>Half</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>C</td>
+                                    <td>#D</td>
+                                    <td>bG</td>
+                                    <td>A</td>
+                                    <td>#A</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>A</td>
+                                    <td>C</td>
+                                    <td>F</td>
+                                    <td>bG</td>
+                                    <td>G</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>B</td>
+                                    <td>D</td>
+                                    <td>F</td>
+                                    <td>bA</td>
+                                    <td>A</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>D</td>
+                                    <td>F</td>
+                                    <td>bA</td>
+                                    <td>B</td>
+                                    <td>C</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>E</td>
+                                    <td>G</td>
+                                    <td>#A</td>
+                                    <td>Db</td>
+                                    <td>D</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>F</td>
+                                    <td>bA</td>
+                                    <td>B</td>
+                                    <td>D</td>
+                                    <td>#D</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>G</td>
+                                    <td>bB</td>
+                                    <td>bD</td>
+                                    <td>E</td>
+                                    <td>F</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>#C</td>
+                                    <td>E</td>
+                                    <td>G</td>
+                                    <td>#A</td>
+                                    <td>B</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>#F</td>
+                                    <td>A</td>
+                                    <td>C</td>
+                                    <td>bE</td>
+                                    <td>E</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>bA</td>
+                                    <td>#D</td>
+                                    <td>D</td>
+                                    <td>F</td>
+                                    <td>bG</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>bB</td>
+                                    <td>bD</td>
+                                    <td>E</td>
+                                    <td>G</td>
+                                    <td>bA</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>bD</td>
+                                    <td>E</td>
+                                    <td>G</td>
+                                    <td>#A</td>
+                                    <td>bC</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>bE</td>
+                                    <td>bG</td>
+                                    <td>A</td>
+                                    <td>E</td>
+                                    <td>bB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Überschrift für die Secondary Dominant Chords -->
+                    <h2 id="mj2">Secondary Dominant Chords</h2>
+                    <!-- Erklärung zu den Secondary Dominant Chords -->
+                    <p id="q1">Ein Secondary Dominant Chord ist ein Akkord, der außerhalb der diatonischen Tonleiter einer bestimmten 
+                        Tonart liegt, aber vorübergehend in einer musikalischen Progression eingeführt wird. Er wird normalerweise 
+                        verwendet, um eine Modulation oder eine vorübergehende Verschiebung zu einer anderen Tonart zu signalisieren. 
+                        Durch die Einführung eines Secondary Dominant Chords erhält die Musik kurzzeitig eine zusätzliche Spannung, die 
+                        dann durch die Rückkehr zur Haupttonart aufgelöst wird. 
+                        Dieser Akkord erzeugt eine klangliche Vielfalt und eine vorübergehende Veränderung des harmonischen Kontexts, 
+                        bevor die ursprüngliche Harmonie wiederhergestellt wird.</p>
+                    <!-- Tabelle für die Secondary Dominant Chords -->
+                    <table id="t5">
+                            <thead>
+                                <tr>
+                                    <th>Grundton</th>
+                                    <th>Secondary Dominant</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>C</td>
+                                <td>D7</td>
+                            </tr>
+                            <tr>
+                                <td>D</td>
+                                <td>E7</td>
+                            </tr>
+                            <tr>
+                                <td>E</td>
+                                <td>F#7</td>
+                            </tr>
+                            <tr>
+                                <td>F</td>
+                                <td>G7</td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>A7</td>
+                            </tr>
+                            <tr>
+                                <td>A</td>
+                                <td>B7</td>
+                            </tr>
+                            <tr>
+                                <td>B</td>
+                                <td>#C7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+             
+
+    <!-- Footer -->
+    <Footer>
+        <div class="footer-content">
+            <!-- Liste von Fußzeilenlinks -->
+            <ul>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+        </div>
+    </Footer>
+             
+        <!-- JavaScript-Datei -->
+    <script src="script.js"></script>
+
+</body>
+</html>

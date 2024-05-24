@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Seitentitel -->
+    <title>MuzPro.org</title>
+    <!-- CSS-Bibliotheken -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Eigene CSS-Datei -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h1>MuzPro.org</h1> 
+        <!-- Toggle-Schalter für die Sidebar -->
+        <label for="toggle_button" class="toggle_button">
+            <li onclick="showSidebar()"><a href="#"><i class="fa fa-bars" aria-hidden="true" style="color:white; font-size:35px; margin-right: 20px"></i></a></li>
+        </label>
+        <!-- Sidebar-Menü -->
+        <ul class="sidebar">
+        <!-- Schließen-Schaltfläche für die Sidebar -->
+            <li onclick="hideSidebar()" id="svg">
+                <a href="#">
+                    <!-- SVG-Symbol zum Schließen der Sidebar -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="white" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a>
+            </li>
+            <!-- Navigationslinks -->
+            <li><a href="MuzPro.org.html" id="o">Start</a></li>
+            <li><a href="Produktion.html" id="o">Produktion</a></li>
+            <li><a href="major_scale.html" id="o">Major</a></li>
+            <li><a href="modes.html" id="o">Modes</a></li>
+            <li><a href="Songwriting.html" id="o">Chord Porgressions</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="notenliste">
+            <!-- Die Tonleitern der Minor-Reihe -->
+            <h2 id="mj1">Alle Tonleitern der Minor-Reihe</h2>
+        <table>
+            <thead>
+                <tr>
+                    <!-- Einteilung in Schritte angegeben in Römischen Zahlen -->
+                    <th>Noten</th>
+                    <th>W</th>
+                    <th>W</th>
+                    <th>H</th>
+                    <th>W</th>
+                    <th>W</th>
+                    <th>W</th>
+                    <th>H</th>
+                    <th>W</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="c-moll">C Minor</td>
+                    <td id="c-moll-1">C</td>
+                    <td id="c-moll-2">D</td>
+                    <td id="c-moll-3">Eb</td>
+                    <td id="c-moll-4">F</td>
+                    <td id="c-moll-5">G</td>
+                    <td id="c-moll-6">Ab</td>
+                    <td id="c-moll-7">Bb</td>
+                    <td id="c-moll-8">C</td>
+                </tr>
+                <tr>
+                    <td id="a-moll">A Minor</td>
+                    <td id="a-moll-1">A</td>
+                    <td id="a-moll-2">B</td>
+                    <td id="a-moll-3">C</td>
+                    <td id="a-moll-4">D</td>
+                    <td id="a-moll-5">E</td>
+                    <td id="a-moll-6">F</td>
+                    <td id="a-moll-7">G</td>
+                    <td id="a-moll-8">A</td>
+                </tr>
+                <tr>
+                    <td id="e-moll">E Minor</td>
+                    <td id="e-moll-1">E</td>
+                    <td id="e-moll-2">F#</td>
+                    <td id="e-moll-3">G</td>
+                    <td id="e-moll-4">A</td>
+                    <td id="e-moll-5">B</td>
+                    <td id="e-moll-6">C</td>
+                    <td id="e-moll-7">D</td>
+                    <td id="e-moll-8">E</td>
+                </tr>
+                <tr>
+                    <td id="d-moll">D Minor</td>
+                    <td id="d-moll-1">D</td>
+                    <td id="d-moll-2">E</td>
+                    <td id="d-moll-3">F</td>
+                    <td id="d-moll-4">G</td>
+                    <td id="d-moll-5">A</td>
+                    <td id="d-moll-6">Bb</td>
+                    <td id="d-moll-7">C</td>
+                    <td id="d-moll-8">D</td>
+                </tr>
+                <tr>
+                    <td id="g-moll">G Minor</td>
+                    <td id="g-moll-1">G</td>
+                    <td id="g-moll-2">A</td>
+                    <td id="g-moll-3">Bb</td>
+                    <td id="g-moll-4">C</td>
+                    <td id="g-moll-5">D</td>
+                    <td id="g-moll-6">Eb</td>
+                    <td id="g-moll-7">F</td>
+                    <td id="g-moll-8">G</td>
+                </tr>
+                <tr>
+                    <td id="f-moll">F Minor</td>
+                    <td id="f-moll-1">F</td>
+                    <td id="f-moll-2">G</td>
+                    <td id="f-moll-3">Ab</td>
+                    <td id="f-moll-4">Bb</td>
+                    <td id="f-moll-5">C</td>
+                    <td id="f-moll-6">Db</td>
+                    <td id="f-moll-7">Eb</td>
+                    <td id="f-moll-8">F</td>
+                </tr>
+                <tr>
+                    <td id="bb-moll">Bb Minor</td>
+                    <td id="bb-moll-1">Bb</td>
+                    <td id="bb-moll-2">C</td>
+                    <td id="bb-moll-3">Db</td>
+                    <td id="bb-moll-4">Eb</td>
+                    <td id="bb-moll-5">F</td>
+                    <td id="bb-moll-6">Gb</td>
+                    <td id="bb-moll-7">Ab</td>
+                    <td id="bb-moll-8">Bb</td>
+                </tr>
+                <tr>
+                    <td id="eb-moll">Eb Minor</td>
+                    <td id="eb-moll-1">Eb</td>
+                    <td id="eb-moll-2">F</td>
+                    <td id="eb-moll-3">Gb</td>
+                    <td id="eb-moll-4">Ab</td>
+                    <td id="eb-moll-5">Bb</td>
+                    <td id="eb-moll-6">Cb</td>
+                    <td id="eb-moll-7">Db</td>
+                    <td id="eb-moll-8">Eb</td>
+                </tr>
+                <tr>
+                    <td id="ab-moll">Ab Minor</td>
+                    <td id="ab-moll-1">Ab</td>
+                    <td id="ab-moll-2">Bb</td>
+                    <td id="ab-moll-3">Cb</td>
+                    <td id="ab-moll-4">Db</td>
+                    <td id="ab-moll-5">Eb</td>
+                    <td id="ab-moll-6">Fb</td>
+                    <td id="ab-moll-7">Gb</td>
+                    <td id="ab-moll-8">Ab</td>
+                </tr>
+                <tr>
+                    <td id="db-moll">Db Minor</td>
+                    <td id="db-moll-1">Db</td>
+                    <td id="db-moll-2">Eb</td>
+                    <td id="db-moll-3">Fb</td>
+                    <td id="db-moll-4">Gb</td>
+                    <td id="db-moll-5">Ab</td>
+                    <td id="db-moll-6">Bbb</td>
+                    <td id="db-moll-7">Cb</td>
+                    <td id="db-moll-8">Db</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+        <div class="notenliste">
+            <!-- Auflistung der Minor-Progressionen -->
+            <h2 id="mj4">Minor-Progression</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tonart</th>
+                        <th>I</th>
+                        <th>II</th>
+                        <th>III</th>
+                        <th>IV</th>
+                        <th>V</th>
+                        <th>VI</th>
+                        <th>VII</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="c-min">C Minor</td>
+                        <td id="c-min-1">Cmin</td>
+                        <td id="c-min-2">Ddim</td>
+                        <td id="c-min-3">Eb</td>
+                        <td id="c-min-4">Fmin</td>
+                        <td id="c-min-5">Gmin</td>
+                        <td id="c-min-6">Ab</td>
+                        <td id="c-min-7">Bb</td>
+                    </tr>
+                    <tr>
+                        <td id="d-min">A Minor</td>
+                        <td id="d-min-1">Amin</td>
+                        <td id="d-min-2">Bdim</td>
+                        <td id="d-min-3">C</td>
+                        <td id="d-min-4">Dmin</td>
+                        <td id="d-min-5">Emin</td>
+                        <td id="d-min-6">F</td>
+                        <td id="d-min-7">G</td>
+                    </tr>
+                    <tr>
+                        <td id="e-min">B Minor</td>
+                        <td id="e-min-1">Bmin</td>
+                        <td id="e-min-2">C#dim</td>
+                        <td id="e-min-3">D</td>
+                        <td id="e-min-4">Emin</td>
+                        <td id="e-min-5">F#min</td>
+                        <td id="e-min-6">G</td>
+                        <td id="e-min-7">A</td>
+                    </tr>
+                    <tr>
+                        <td id="f-min">D Minor</td>
+                        <td id="f-min-1">Dmin</td>
+                        <td id="f-min-2">Edim</td>
+                        <td id="f-min-3">F</td>
+                        <td id="f-min-4">Gmin</td>
+                        <td id="f-min-5">Amin</td>
+                        <td id="f-min-6">Bb</td>
+                        <td id="f-min-7">C</td>
+                    </tr>
+                    <tr>
+                        <td id="g-min">E Minor</td>
+                        <td id="g-min-1">Emin</td>
+                        <td id="g-min-2">F#dim</td>
+                        <td id="g-min-3">G</td>
+                        <td id="g-min-4">Amin</td>
+                        <td id="g-min-5">Bmin</td>
+                        <td id="g-min-6">C</td>
+                        <td id="g-min-7">D</td>
+                    </tr>
+                    <tr>
+                        <td id="a-min">F Minor</td>
+                        <td id="a-min-1">Fmin</td>
+                        <td id="a-min-2">Gdim</td>
+                        <td id="a-min-3">Ab</td>
+                        <td id="a-min-4">Cmin</td>
+                        <td id="a-min-5">Dmin</td>
+                        <td id="a-min-6">Eb</td>
+                        <td id="a-min-7">F</td>
+                    </tr>
+                    <tr>
+                        <td id="b-min">G Minor</td>
+                        <td id="b-min-1">Gmin</td>
+                        <td id="b-min-2">Adim</td>
+                        <td id="b-min-3">Bb</td>
+                        <td id="b-min-4">Cmin</td>
+                        <td id="b-min-5">Dmin</td>
+                        <td id="b-min-6">Eb</td>
+                        <td id="b-min-7">F</td>
+                    </tr>
+                    <tr>
+                        <td id="c#-min">C# Minor</td>
+                        <td id="c#-min-1">C#min</td>
+                        <td id="c#-min-2">D#dim</td>
+                        <td id="c#-min-3">E</td>
+                        <td id="c#-min-4">F#min</td>
+                        <td id="c#-min-5">G#min</td>
+                        <td id="c#-min-6">A</td>
+                        <td id="c#-min-7">B</td>
+                    </tr>
+                    <tr>
+                        <td id="f#-min">F# Minor</td>
+                        <td id="f#-min-1">F#min</td>
+                        <td id="f#-min-2">G#dim</td>
+                        <td id="f#-min-3">A</td>
+                        <td id="f#-min-4">Bmin</td>
+                        <td id="f#-min-5">C#min</td>
+                        <td id="f#-min-6">D</td>
+                        <td id="f#-min-7">E</td>
+                    </tr>
+                    <tr>
+                        <td id="g#-min">Ab Minor</td>
+                        <td id="g#-min-1">Abmin</td>
+                        <td id="g#-min-2">Bbdim</td>
+                        <td id="g#-min-3">D</td>
+                        <td id="g#-min-4">Dbmin</td>
+                        <td id="g#-min-5">Ebmin</td>
+                        <td id="g#-min-6">Fb</td>
+                        <td id="g#-min-7">Gb</td>
+                    </tr>
+                    <tr>
+                        <td id="a-flat-min">Bb Minor</td>
+                        <td id="a-flat-min-1">Bbmin</td>
+                        <td id="a-flat-min-2">Cdim</td>
+                        <td id="a-flat-min-3">Db</td>
+                        <td id="a-flat-min-4">Ebmin</td>
+                        <td id="a-flat-min-5">Fmin</td>
+                        <td id="a-flat-min-6">Gb</td>
+                        <td id="a-flat-min-7">Ab</td>
+                    </tr>
+                    <tr>
+                        <td id="b-flat-min">Db Minor</td>
+                        <td id="b-flat-min-1">Dbmin</td>
+                        <td id="b-flat-min-2">Ebdim</td>
+                        <td id="b-flat-min-3">Fb</td>
+                        <td id="b-flat-min-4">Gbmin</td>
+                        <td id="b-flat-min-5">Abmin</td>
+                        <td id="b-flat-min-6">Bbb</td>
+                        <td id="b-flat-min-7">Cb</td>
+                    </tr>
+                    <tr>
+                        <td id="d-flat-min">Eb Minor</td>
+                        <td id="d-flat-min-1">Ebmin</td>
+                        <td id="d-flat-min-2">Fdim</td>
+                        <td id="d-flat-min-3">Gb</td>
+                        <td id="d-flat-min-4">Abmin</td>
+                        <td id="d-flat-min-5">Bbmin</td>
+                        <td id="d-flat-min-6">Cb</td>
+                        <td id="d-flat-min-7">Db</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </main>
+        
+    <!-- Footer -->
+    <Footer>
+        <div class="footer-content">
+            <!-- Liste von Fußzeilenlinks -->
+            <ul>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+        </div>
+    </Footer>
+        
+    <!-- Skriptdatei -->
+    <script src="script.js"></script>
+
+</body>
+</html>
