@@ -9,17 +9,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Navigation -->
     <nav>
         <h1>MuzPro.org</h1> 
+        <!-- Toggle-Button für die Sidebar -->
         <label for="toggle_button" class="toggle_button">
             <li onclick="showSidebar()"><a href="#"><i class="fa fa-bars" aria-hidden="true" style="color:white; font-size:35px; margin-right: 20px"></i></a></li>
         </label>
+        <!-- Sidebar -->
         <ul class="sidebar">
+        <!-- Schließen-Button für die Sidebar -->
             <li onclick="hideSidebar()" id="svg">
                 <a href="#">
+                    <!-- SVG-Symbol zum Schließen der Sidebar -->
                     <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="white" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </a>
             </li>
+            <!-- Navigationslinks -->
             <li><a href="MuzPro.org.html" id="o">Start</a></li>
             <li><a href="Produktion.html" id="o">Produktion</a></li>
             <li><a href="minor_scale.html" id="o">Minor</a></li>
@@ -28,8 +34,10 @@
         </ul>
     </nav>
 
+    <!-- Hauptinhalt -->
     <main>
         <div class="notenliste">
+        <!-- Überschrift für alle Tonleitern -->
             <h2 id="mj4">Alle Tonleitern der Major-Reihe</h2>
 
             <table>
@@ -48,6 +56,7 @@
                 </thead>
                 <tbody>
                     <tr>
+                        <!-- C-Major -->
                         <td id="c-dur">C Major</td>
                         <td id="c-dur-1">C</td>
                         <td id="c-dur-2">D</td>
@@ -59,6 +68,7 @@
                         <td id="c-dur-8">C</td>
                     </tr>
                     <tr>
+                        <!-- G-Major -->
                         <td id="g-dur">G Major</td>
                         <td id="g-dur-1">G</td>
                         <td id="g-dur-2">A</td>
@@ -70,6 +80,7 @@
                         <td id="g-dur-8">G</td>
                     </tr>
                     <tr>
+                        <!-- D-Major -->
                         <td id="d-dur">D Major</td>
                         <td id="d-dur-1">D</td>
                         <td id="d-dur-2">E</td>
@@ -81,6 +92,7 @@
                         <td id="d-dur-8">D</td>
                     </tr>
                     <tr>
+                        <!-- A-Major -->
                         <td id="a-dur">A Major</td>
                         <td id="a-dur-1">A</td>
                         <td id="a-dur-2">B</td>
@@ -92,6 +104,7 @@
                         <td id="a-dur-8">A</td>
                     </tr>
                     <tr>
+                        <!-- E-Major -->
                         <td id="e-dur">E Major</td>
                         <td id="e-dur-1">E</td>
                         <td id="e-dur-2">F#</td>
@@ -103,6 +116,7 @@
                         <td id="e-dur-8">E</td>
                     </tr>
                     <tr>
+                        <!-- B-Major -->
                         <td id="b-dur">B Major</td>
                         <td id="b-dur-1">B</td>
                         <td id="b-dur-2">C#</td>
@@ -114,6 +128,7 @@
                         <td id="b-dur-8">B</td>
                     </tr>
                     <tr>
+                        <!-- F#-Major -->
                         <td id="f#-dur">F# Major</td>
                         <td id="f#-dur-1">F#</td>
                         <td id="f#-dur-2">G#</td>
@@ -125,6 +140,7 @@
                         <td id="f#-dur-8">F#</td>
                     </tr>
                     <tr>
+                        <!-- C#-Major -->
                         <td id="c#-dur">C# Major</td>
                         <td id="c#-dur-1">C#</td>
                         <td id="c#-dur-2">D#</td>
@@ -136,6 +152,7 @@
                         <td id="c#-dur-8">C#</td>
                     </tr>
                     <tr>
+                        <!-- F-Major -->
                         <td id="f-dur">F Major</td>
                         <td id="f-dur-1">F</td>
                         <td id="f-dur-2">G</td>
@@ -147,6 +164,7 @@
                         <td id="f-dur-8">F</td>
                     </tr>
                     <tr>
+                        <!-- Bb-Major -->
                         <td id="bb-dur">Bb Major</td>
                         <td id="bb-dur-1">Bb</td>
                         <td id="bb-dur-2">C</td>
@@ -158,6 +176,7 @@
                         <td id="bb-dur-8">Bb</td>
                     </tr>
                     <tr>
+                        <!-- Eb-Major -->
                         <td id="eb-dur">Eb Major</td>
                         <td id="eb-dur-1">Eb</td>
                         <td id="eb-dur-2">F</td>
@@ -169,6 +188,7 @@
                         <td id="eb-dur-8">Eb</td>
                     </tr>
                     <tr>
+                        <!-- Ab-Major -->
                         <td id="ab-dur">Ab Major</td>
                         <td id="ab-dur-1">Ab</td>
                         <td id="ab-dur-2">Bb</td>
@@ -180,6 +200,7 @@
                         <td id="ab-dur-8">Ab</td>
                     </tr>
                     <tr>
+                        <!-- Db-Major -->
                         <td id="db-dur">Db Major</td>
                         <td id="db-dur-1">Db</td>
                         <td id="db-dur-2">Eb</td>
@@ -195,6 +216,7 @@
         </div>
 
         <div class="notenliste">
+        <!-- Überschrift für Major-Progressions -->
             <h2 id="mj3">Major-Progression</h2>
 
             <table>
@@ -212,6 +234,7 @@
                 </thead>
                 <tbody>
                     <tr>
+                        <!-- C-Major Progressionen -->
                         <td id="c-dur">C Major</td>
                         <td id="c-dur-1">C</td>
                         <td id="c-dur-2">Dmin</td>
@@ -222,6 +245,7 @@
                         <td id="c-dur-7">Bdim</td>
                     </tr>
                     <tr>
+                        <!-- D-Major Progressionen -->
                         <td id="d-dur">D Major</td>
                         <td id="d-dur-1">D</td>
                         <td id="d-dur-2">Emin</td>
@@ -232,6 +256,7 @@
                         <td id="d-dur-7">C#dim</td>
                     </tr>
                     <tr>
+                        <!-- E-Major Progressionen -->
                         <td id="e-dur">E Major</td>
                         <td id="e-dur-1">E</td>
                         <td id="e-dur-2">F#min</td>
@@ -242,6 +267,7 @@
                         <td id="e-dur-7">D#dim</td>
                     </tr>
                     <tr>
+                        <!-- F-Major Progressionen -->
                         <td id="f-dur">F Major</td>
                         <td id="f-dur-1">F</td>
                         <td id="f-dur-2">Gmin</td>
@@ -252,6 +278,7 @@
                         <td id="f-dur-7">Edim</td>
                     </tr>
                     <tr>
+                        <!-- G-Major Progressionen -->
                         <td id="g-dur">G Major</td>
                         <td id="g-dur-1">G</td>
                         <td id="g-dur-2">Amin</td>
@@ -262,6 +289,7 @@
                         <td id="g-dur-7">F#dim</td>
                     </tr>
                     <tr>
+                        <!-- A-Major Progressionen -->
                         <td id="a-dur">A Major</td>
                         <td id="a-dur-1">A</td>
                         <td id="a-dur-2">Bmin</td>
@@ -272,6 +300,7 @@
                         <td id="a-dur-7">G#dim</td>
                     </tr>
                     <tr>
+                        <!-- B-Major Progressionen -->
                         <td id="b-dur">B Major</td>
                         <td id="b-dur-1">B</td>
                         <td id="b-dur-2">C#min</td>
@@ -282,6 +311,7 @@
                         <td id="b-dur-7">A#dim</td>
                     </tr>
                     <tr>
+                        <!-- C#-Major Progressionen -->
                         <td id="c#-dur">C# Major</td>
                         <td id="c#-dur-1">C#</td>
                         <td id="c#-dur-2">D#min</td>
@@ -292,6 +322,7 @@
                         <td id="c#-dur-7">B#dim</td>
                     </tr>
                     <tr>
+                        <!-- F#-Major Progressionen -->
                         <td id="f#-dur">F# Major</td>
                         <td id="f#-dur-1">F#</td>
                         <td id="f#-dur-2">G#min</td>
@@ -302,6 +333,7 @@
                         <td id="f#-dur-7">E#dim</td>
                     </tr>
                     <tr>
+                        <!-- Ab-Major Progressionen -->
                         <td id="b-flat-dur">Ab Major</td>
                         <td id="b-flat-dur-1">Ab</td>
                         <td id="b-flat-dur-2">Bbmin</td>
@@ -312,6 +344,7 @@
                         <td id="b-flat-dur-7">Gdim</td>
                     </tr>
                     <tr>
+                        <!-- Bb-Major Progressionen -->
                         <td id="e-flat-dur">Bb Major</td>
                         <td id="e-flat-dur-1">Bb</td>
                         <td id="e-flat-dur-2">Cmin</td>
@@ -322,6 +355,7 @@
                         <td id="e-flat-dur-7">Adim</td>
                     </tr>
                     <tr>
+                        <!-- Db-Major Progressionen -->
                         <td id="a-flat-dur">Db Major</td>
                         <td id="a-flat-dur-1">Db</td>
                         <td id="a-flat-dur-2">Ebmin</td>
@@ -332,6 +366,7 @@
                         <td id="a-flat-dur-7">Cdim</td>
                     </tr>
                     <tr>
+                        <!-- Eb-Major Progressionen -->
                         <td id="a-flat-dur">Eb Major</td>
                         <td id="a-flat-dur-1">Eb</td>
                         <td id="a-flat-dur-2">Fmin</td>
@@ -345,9 +380,11 @@
             </table>
         </div>
     </main>
-        
+    
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
+        <!-- Liste von Fußzeilenlinks -->
             <ul>
                 <li><a href="#">Kontakt</a></li>
                 <li><a href="#">Impressum</a></li>
@@ -357,7 +394,9 @@
             </ul>
         </div>
     </footer>
-        <script src="script.js"></script>
+
+    <!-- Skriptdatei -->
+    <script src="script.js"></script>
 
 </body>
 </html>

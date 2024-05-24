@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <!-- Meta-Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Seitentitel -->
     <title>MuzPro.org</title>
+    <!-- CSS-Bibliotheken -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Eigene CSS-Datei -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
         <h1>MuzPro.org</h1> 
+        <!-- Toggle-Schalter für die Sidebar -->
         <label for="toggle_button" class="toggle_button">
             <li onclick="showSidebar()"><a href="#"><i class="fa fa-bars" aria-hidden="true" style="color:white; font-size:35px; margin-right: 20px"></i></a></li>
         </label>
+        <!-- Sidebar-Menü -->
         <ul class="sidebar">
+            <!-- Schließen-Schaltfläche für die Sidebar -->
             <li onclick="hideSidebar()" id="svg">
                 <a href="#">
+                    <!-- SVG-Symbol zum Schließen der Sidebar -->
                     <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="white" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </a>
             </li>
+            <!-- Navigationslinks -->
             <li><a href="MuzPro.org.html" id="o">Start</a></li>
             <li><a href="Produktion.html" id="o">Produktion</a></li>
             <li><a href="major_scale.html" id="o">Major</a></li>
@@ -29,6 +39,7 @@
         </ul>
     </nav>
 
+    <!-- Hauptinhalt -->
     <main>
         <!DOCTYPE html>
         <html lang="de">
@@ -41,14 +52,15 @@
             <link rel="stylesheet" href="style.css">
         </head>
         <body>
-            <main>
-                <h2 id="mj3">Major-Progressions Formel</h2>
-                <img src="Image/major_prog.jpg" id="img1" alt="Bild 1" height="200px" width="500px">
-            
-                
-            <div class="notenliste">
-                <h2 id="mj2">Major-Progressions</h2>
     
+        <main>
+            <!-- Formel für die Major-Porgressionen -->
+            <h2 id="mj3">Major-Progressions Formel</h2>
+            <img src="Image/major_prog.jpg" id="img1" alt="Bild 1" height="200px" width="500px">
+            
+            <div class="notenliste">
+            <!-- Tabellen für die Porgressionen -->
+                <h2 id="mj2">Major-Progressions</h2>
                 <table>
                     <thead>
                         <tr>
@@ -64,6 +76,7 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <!-- C-Major -->
                             <td id="c-dur">C Major</td>
                             <td id="c-dur-1">C</td>
                             <td id="c-dur-2">Dmin</td>
@@ -74,6 +87,7 @@
                             <td id="c-dur-7">Bdim</td>
                         </tr>
                         <tr>
+                            <!-- D-Major -->
                             <td id="d-dur">D Major</td>
                             <td id="d-dur-1">D</td>
                             <td id="d-dur-2">Emin</td>
@@ -84,6 +98,7 @@
                             <td id="d-dur-7">C#dim</td>
                         </tr>
                         <tr>
+                            <!-- E-Major -->
                             <td id="e-dur">E Major</td>
                             <td id="e-dur-1">E</td>
                             <td id="e-dur-2">F#min</td>
@@ -94,6 +109,7 @@
                             <td id="e-dur-7">D#dim</td>
                         </tr>
                         <tr>
+                            <!-- F-Major -->
                             <td id="f-dur">F Major</td>
                             <td id="f-dur-1">F</td>
                             <td id="f-dur-2">Gmin</td>
@@ -104,6 +120,7 @@
                             <td id="f-dur-7">Edim</td>
                         </tr>
                         <tr>
+                            <!-- G-Major -->
                             <td id="g-dur">G Major</td>
                             <td id="g-dur-1">G</td>
                             <td id="g-dur-2">Amin</td>
@@ -114,6 +131,7 @@
                             <td id="g-dur-7">F#dim</td>
                         </tr>
                         <tr>
+                            <!-- A-Major -->
                             <td id="a-dur">A Major</td>
                             <td id="a-dur-1">A</td>
                             <td id="a-dur-2">Bmin</td>
@@ -124,6 +142,7 @@
                             <td id="a-dur-7">G#dim</td>
                         </tr>
                         <tr>
+                            <!-- B-Major -->
                             <td id="b-dur">B Major</td>
                             <td id="b-dur-1">B</td>
                             <td id="b-dur-2">C#min</td>
@@ -134,6 +153,7 @@
                             <td id="b-dur-7">A#dim</td>
                         </tr>
                         <tr>
+                            <!-- C#-Major -->
                             <td id="c#-dur">C# Major</td>
                             <td id="c#-dur-1">C#</td>
                             <td id="c#-dur-2">D#min</td>
@@ -144,6 +164,7 @@
                             <td id="c#-dur-7">B#dim</td>
                         </tr>
                         <tr>
+                            <!-- F#-Major -->
                             <td id="f#-dur">F# Major</td>
                             <td id="f#-dur-1">F#</td>
                             <td id="f#-dur-2">G#min</td>
@@ -154,6 +175,7 @@
                             <td id="f#-dur-7">E#dim</td>
                         </tr>
                         <tr>
+                            <!-- Ab-Major -->
                             <td id="b-flat-dur">Ab Major</td>
                             <td id="b-flat-dur-1">Ab</td>
                             <td id="b-flat-dur-2">Bbmin</td>
@@ -164,6 +186,7 @@
                             <td id="b-flat-dur-7">Gdim</td>
                         </tr>
                         <tr>
+                            <!-- Bb-Major -->
                             <td id="e-flat-dur">Bb Major</td>
                             <td id="e-flat-dur-1">Bb</td>
                             <td id="e-flat-dur-2">Cmin</td>
@@ -174,6 +197,7 @@
                             <td id="e-flat-dur-7">Adim</td>
                         </tr>
                         <tr>
+                            <!-- Db-Major -->
                             <td id="a-flat-dur">Db Major</td>
                             <td id="a-flat-dur-1">Db</td>
                             <td id="a-flat-dur-2">Ebmin</td>
@@ -184,6 +208,7 @@
                             <td id="a-flat-dur-7">Cdim</td>
                         </tr>
                         <tr>
+                            <!-- Eb-Major -->
                             <td id="a-flat-dur">Eb Major</td>
                             <td id="a-flat-dur-1">Eb</td>
                             <td id="a-flat-dur-2">Fmin</td>
@@ -261,16 +286,6 @@
                 </table>
             </div>
             
-        </main>
-
-
-            </footer>
-                <script src="script.js"></script>
-        
-        </body>
-        </html>
-        
-
 
     </main>
         <footer>
@@ -286,3 +301,6 @@
         </footer>
         
         <script src="script.js"></script>
+    </body>
+    </html>
+    
