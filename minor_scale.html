@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <!-- Meta-Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Seitentitel -->
     <title>MuzPro.org</title>
+    <!-- CSS-Bibliotheken -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Eigene CSS-Datei -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
         <h1>MuzPro.org</h1> 
+        <!-- Toggle-Schalter für die Sidebar -->
         <label for="toggle_button" class="toggle_button">
             <li onclick="showSidebar()"><a href="#"><i class="fa fa-bars" aria-hidden="true" style="color:white; font-size:35px; margin-right: 20px"></i></a></li>
         </label>
+        <!-- Sidebar-Menü -->
         <ul class="sidebar">
+        <!-- Schließen-Schaltfläche für die Sidebar -->
             <li onclick="hideSidebar()" id="svg">
                 <a href="#">
+                    <!-- SVG-Symbol zum Schließen der Sidebar -->
                     <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="white" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </a>
             </li>
+            <!-- Navigationslinks -->
             <li><a href="MuzPro.org.html" id="o">Start</a></li>
             <li><a href="Produktion.html" id="o">Produktion</a></li>
             <li><a href="major_scale.html" id="o">Major</a></li>
@@ -325,7 +335,9 @@
             </ul>
         </div>
     </Footer>
-        <script src="script.js"></script>
+        
+    <!-- Skriptdatei -->
+    <script src="script.js"></script>
 
 </body>
 </html>
